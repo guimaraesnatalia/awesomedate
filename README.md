@@ -1,2 +1,2 @@
 # Awesome date
-Telegram Chatbot develop using python to suggest you awesome dates
+Telegram Chatbot developed using python to suggest you awesome dates
