@@ -4,8 +4,11 @@ import expensive_date
 
 
 class Dates:
-    def __init__(self, dates):
-        self.dates = dates
+    def __init__(self):
+        self.dates = []
+        self.chargingCheapDates()
+        self.chargingSomeMoneyDates()
+        self.chargingExpensiveDates()
 
     def setDate(self, date):
         self.dates.append(date)
@@ -27,4 +30,9 @@ class Dates:
         self.setDate(expensive_date.expensive_and_some_clouds_suggest())
         self.setDate(expensive_date.expensive_and_rainny_suggest())
         self.setDate(expensive_date.expensive_and_night_suggest())
+
+    def getADate(self, wether, costs):
+        for date in self.dates:
+            if date.costs == costs and date.perfect_wether == wether:
+                return date.place
 
